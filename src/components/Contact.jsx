@@ -8,14 +8,45 @@ import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formref = useRef()
-  const [from, setForm] = useState ({
+  const [form, setForm] = useState ({
     name: '',
     email: '',
     message: '', 
   })
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value })
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      'service_dcpasxa', 'template_phamc17',
+      {
+        from_name: form.name,
+        to_name: 'Momin',
+        from_email: form.email,
+        to_email: 'momin.alvi@queensu.ca',
+        message: form.message
+      },
+      'X82tSbMkl_MbbZBnr'
+    )
+    .then(() => {
+      setLoading(false);
+      alert('Thank you. I will get back to you as soon as I can!.')
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (eror) => {
+      setLoading(false)
+      console.log(error);
+      alert('Something went wrong.')
+    })
+  }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -25,7 +56,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
+        <form ref={formref} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="What's your name?"
@@ -45,6 +76,13 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn('right', "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
       </motion.div>
     </div>
   )
