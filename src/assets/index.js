@@ -26,9 +26,9 @@ import compsa from "./company/compsa.png";
 import qdaa from "./company/qdaa.png";
 import qmind from "./company/qmind.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import scholarpups from "./scholarpups.png";
+import blog from "./blog.png";
+import plane from "./plane.png";
 
 export {
   logo,
@@ -56,7 +56,7 @@ export {
   compsa,
   qdaa,
   qmind,
-  carrent,
-  jobit,
-  tripguide,
+  scholarpups,
+  blog,
+  plane,
 };

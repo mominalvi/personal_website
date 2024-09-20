@@ -19,9 +19,9 @@ import {
     qdaa,
     qmind,
     compsa,
-    carrent,
-    jobit,
-    tripguide,
+    scholarpups,
+    blog,
+    plane,
     threejs,
   } from "../assets";
   
@@ -122,9 +122,9 @@ import {
       iconBg: "#383E56",
       date: "October 2023 - April 2024",
       points: [
-        "Learning data analytic skills.",
-        "Collaborating in a team to innovate and implement data-driven approaches.",
-        "Enhancing technical skills in data analytics and software development through hands-on projects.",
+        "Learning data analytic skills",
+        "Collaborating in a team to innovate and implement data-driven approaches",
+        "Enhancing technical skills in data analytics and software development through hands-on projects",
       ],
     },
     {
@@ -134,9 +134,9 @@ import {
       iconBg: "#E6DEDD",
       date: "November 2023 - April 2024",
       points: [
-        "Contributed with 5 team members to develop a machine learning application to predict patients length-of-stay.",
-        "Worked with the team to author a research paper detailing the insights and findings from our project.",
-        "Acquired machine learning skills to effectively integrate and apply them in the project.",
+        "Contributed with 5 team members to develop a machine learning application to predict patients length-of-stay",
+        "Worked with the team to author a research paper detailing the insights and findings from our project",
+        "Acquired machine learning skills to effectively integrate and apply them in the project",
       ],
     },
     {
@@ -146,10 +146,22 @@ import {
       iconBg: "#383E56",
       date: "November 2023 - April 2024",
       points: [
-        "Managed weekly internship listings for 1200+ computer science students on the official COMPSA website.",
-        "Organized an event where 50+ students visited Bell and Google offices in Toronto.",
-        "Created a JavaScript application to send an HTML email to 100+ alumni.",
-        "Organized an event attended by 20+ alumni, who shared their career experiences and insights with students.",
+        "Managed weekly internship listings for 1200+ computer science students on the official COMPSA website",
+        "Organized an event where 50+ students visited Bell and Google offices in Toronto",
+        "Created a JavaScript application to automate sending HTML emails to 100+ alumni",
+        "Organized an event attended by 20+ alumni, who shared their career experiences and insights with students",
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company_name: "Queen's Data Analytics Association (QDAA)",
+      icon: qdaa,
+      iconBg: "#E6DEDD",
+      date: "May 2024 - Present",
+      points: [
+        "Co-founded Vita Home, a marketplace for home accessibility equipment, improving safety and independence",
+        "Developing a Minimum Viable Product (MVP) using Next.js, Node.js, and MySQL",
+        "Engaging with industry experts, mentors, and advisors to gain insights and feedback on our startup concept",
       ],
     },
     {
@@ -159,9 +171,23 @@ import {
       iconBg: "#E6DEDD",
       date: "May 2024 - Present",
       points: [
-        "Collaborating within a team to ideate, develop, and implement a startup concept in the senior healthcare space.",
-        "Conducting market research to identify opportunities and challenges within the senior healthcare industry.",
-        "Engaging with industry experts, mentors, and advisors to gain insights and feedback on our startup concept.",
+        "Co-founded Vita Home, a marketplace for home accessibility equipment, improving safety and independence",
+        "Developing a Minimum Viable Product (MVP) using Next.js, Node.js, and MySQL",
+        "Leading market research with 50+ seniors and professionals, securing interest from 10+ potential customers",
+        "Engaging with industry experts, mentors, and advisors to gain insights and feedback on our startup concept"
+      ],
+    },
+    {
+      title: "Backend Developer",
+      company_name: "Queen’s Computing Student’s Association (COMPSA)",
+      icon: compsa,
+      iconBg: "#383E56",
+      date: "August 2024 - Present",
+      points: [
+        "Optimizing backend for Mirrorball II with Node.js, Express.js, and Sequelize ORM to streamline hiring",
+        "Designing Sequelize models and associations to manage data relationships with MySQL",
+        "Integrating Calendly and Postmark APIs to automate interview scheduling and email notifications",
+        "Collaborating with frontend and DevOps teams, using Git for version control, improving workflow efficiency",
       ],
     },
   ];
@@ -195,9 +221,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Scholar Pups",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Scholar Pups is an online scholarship counselor that provides personalized recommendations and feedback to help students from disadvantaged backgrounds, including lower-income and Indigenous communities, access post-secondary education opportunities",
       tags: [
         {
           name: "react",
@@ -208,54 +234,58 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "javascript",
           color: "pink-text-gradient",
         },
+        {
+          name: "fastapi",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "langchain",
+          color: "black-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: scholarpups,
+      source_code_link: "https://devpost.com/software/hacker-in-progress",
     },
     {
-      name: "Job IT",
+      name: "Personal Blog",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "I developed a full-stack blog application, designed to facilitate user engagement on the website. This platform features a secure user registration and login system, allowing visitors to create personal accounts. With these accounts, they can participate in the site's interactive elements, thus contributing to an online community",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "sql",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "javascript",
           color: "pink-text-gradient",
         },
+        {
+          name: "flask",
+          color: "orange-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: blog,
+      source_code_link: "https://github.com/mominalvi/personal-blog-website",
     },
     {
-      name: "Trip Guide",
+      name: "API Flight Deal Finder",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "I developed a Python application designed to automate the search for affordable flight options. This application uses Sheety API to retrieve city names. I used Kiwi API to scan for the most cost-effective flight deals for each city. Upon identifying favorable options, it utilizes the Twilio API to promptly notify users via SMS, ensuring they have immediate access to these opportunities",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: plane,
+      source_code_link: "https://github.com/mominalvi/flight-deals",
     },
   ];
   
