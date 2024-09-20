@@ -1,6 +1,7 @@
 {
   "name": "personal_website",
   "private": true,
+  "homepage": "https://mominalvi.github.io/personal_website",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
