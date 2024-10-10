@@ -196,7 +196,7 @@ import {
       company_name: "Queen's Hyperloop Design Team (QHDT)",
       icon: qhdt,
       iconBg: "#383E56",
-      date: "August 2024 - Present",
+      date: "October 2024 - Present",
       points: [
         "TBA"
       ],
