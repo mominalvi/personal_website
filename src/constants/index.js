@@ -23,6 +23,7 @@ import {
     blog,
     plane,
     threejs,
+    qhdt
   } from "../assets";
   
   export const navLinks = [
@@ -188,6 +189,16 @@ import {
         "Designing Sequelize models and associations to manage data relationships with MySQL",
         "Integrating Calendly and Postmark APIs to automate interview scheduling and email notifications",
         "Collaborating with frontend and DevOps teams, using Git for version control, improving workflow efficiency",
+      ],
+    },
+    {
+      title: "Electrical Designer",
+      company_name: "Queen's Hyperloop Design Team (QHDT)",
+      icon: qhdt,
+      iconBg: "#383E56",
+      date: "August 2024 - Present",
+      points: [
+        "TBA"
       ],
     },
   ];

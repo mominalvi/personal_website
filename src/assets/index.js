@@ -25,6 +25,7 @@ import queens from "./company/queens.png";
 import compsa from "./company/compsa.png";
 import qdaa from "./company/qdaa.png";
 import qmind from "./company/qmind.png";
+import qhdt from "./company/qhdt.png"
 
 import scholarpups from "./scholarpups.png";
 import blog from "./blog.png";
@@ -59,4 +60,5 @@ export {
   scholarpups,
   blog,
   plane,
+  qhdt
 };
