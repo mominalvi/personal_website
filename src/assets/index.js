@@ -30,6 +30,7 @@ import qhdt from "./company/qhdt.png"
 import scholarpups from "./scholarpups.png";
 import blog from "./blog.png";
 import plane from "./plane.png";
+import TBA from "./TBA.png"
 
 export {
   logo,
@@ -60,5 +61,6 @@ export {
   scholarpups,
   blog,
   plane,
-  qhdt
+  qhdt,
+  TBA
 };

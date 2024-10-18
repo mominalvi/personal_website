@@ -23,7 +23,8 @@ import {
     blog,
     plane,
     threejs,
-    qhdt
+    qhdt,
+    TBA
   } from "../assets";
   
   export const navLinks = [
@@ -297,6 +298,19 @@ import {
       ],
       image: plane,
       source_code_link: "https://github.com/mominalvi/flight-deals",
+    },
+    {
+      name: "AI Song Detector",
+      description:
+        "I am currently developing an application to detect whether a song is AI generated or human made. The backend is being built with FastAPI, handling file uploads and AI model integration, while the frontend is developed using React and styled with Tailwind CSS for a modern and friendly interface. This project is helping me deepen my knowledge of machine learning and full-stack development",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: TBA,
+      source_code_link: "https://github.com/mominalvi/ai-song-detector",
     },
   ];
   
