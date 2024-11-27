@@ -148,10 +148,23 @@ import {
       iconBg: "#383E56",
       date: "November 2023 - April 2024",
       points: [
-        "Managed weekly internship listings for 1200+ computer science students on the official COMPSA website",
-        "Organized an event where 50+ students visited Bell and Google offices in Toronto",
-        "Created a JavaScript application to automate sending HTML emails to 100+ alumni",
-        "Organized an event attended by 20+ alumni, who shared their career experiences and insights with students",
+        "Managed weekly internship listings for 1200+ students on the COMPSA website, leading to a 20% rise in site traffic",
+        "Organized an event where 50+ students visited Bell and Google offices, fostering career interest and student networking",
+        "Automated emailing with JavaScript for 100+ alumni, reducing manual workload and saving 5+ hours per week",
+        "Coordinated an event with 20+ alumni, providing students with industry insights and understanding of potential careers",
+      ],
+    },
+    {
+      title: "Startup Co-Founder",
+      company_name: "Queen’s University Innovation Centre Summer Initative (QICSI)",
+      icon: queens,
+      iconBg: "#E6DEDD",
+      date: "May 2024 - August 2024",
+      points: [
+        "Co-founded Vita Home, a marketplace for senior accessibility equipment to enhance independence and safety at home",
+        "Utilized Next.js, Node.js, and MySQL to develop an MVP, enhancing search ease and receiving positive user feedback",
+        "Leading research with 50+ seniors and professionals, gaining 10+ potential customers and validating demand",
+        "Engaging with industry experts and mentors to gain feedback on our concept, improving alignment with user needs"
       ],
     },
     {
@@ -161,22 +174,7 @@ import {
       iconBg: "#E6DEDD",
       date: "May 2024 - Present",
       points: [
-        "Co-founded Vita Home, a marketplace for home accessibility equipment, improving safety and independence",
-        "Developing a Minimum Viable Product (MVP) using Next.js, Node.js, and MySQL",
-        "Engaging with industry experts, mentors, and advisors to gain insights and feedback on our startup concept",
-      ],
-    },
-    {
-      title: "Startup Co-Founder",
-      company_name: "Queen’s University Innovation Centre Summer Initative (QICSI)",
-      icon: queens,
-      iconBg: "#E6DEDD",
-      date: "May 2024 - Present",
-      points: [
-        "Co-founded Vita Home, a marketplace for home accessibility equipment, improving safety and independence",
-        "Developing a Minimum Viable Product (MVP) using Next.js, Node.js, and MySQL",
-        "Leading market research with 50+ seniors and professionals, securing interest from 10+ potential customers",
-        "Engaging with industry experts, mentors, and advisors to gain insights and feedback on our startup concept"
+        "TBA",
       ],
     },
     {
@@ -186,10 +184,10 @@ import {
       iconBg: "#383E56",
       date: "August 2024 - Present",
       points: [
-        "Optimizing backend for Mirrorball II with Node.js, Express.js, and Sequelize ORM to streamline hiring",
-        "Designing Sequelize models and associations to manage data relationships with MySQL",
+        "Optimizing backend for Mirrorball II with Node.js, Express.js, and Sequelize ORM to automate student club hiring",
+        "Designing Sequelize models in MySQL to structure data flow, improving backend efficiency",
         "Integrating Calendly and Postmark APIs to automate interview scheduling and email notifications",
-        "Collaborating with frontend and DevOps teams, using Git for version control, improving workflow efficiency",
+        "Utilizing Git for version control, boosting workflow efficiency by 25%",
       ],
     },
     {
@@ -201,33 +199,6 @@ import {
       points: [
         "TBA"
       ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
@@ -314,4 +285,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
